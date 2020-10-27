@@ -9,7 +9,7 @@ const StoreProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const fetchData = async () => {
-    const { date } = await request.get("/courses");
+    const { data } = await request.get("/courses");
 
     setCourses(data.courses);
   };
@@ -19,7 +19,7 @@ const StoreProvider = ({ children }) => {
   }, []);
 
   return (
-    <StoreContext.Provider value={(courses, setCourses, user, setUser)}>
+    <StoreContext.Provider value={{ courses, setCourses, user, setUser }}>
       {children}
     </StoreContext.Provider>
   );
