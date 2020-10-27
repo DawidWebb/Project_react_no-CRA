@@ -6,3 +6,9 @@
 body {
   font-family: Arial;
 }
+.content-wrapper {
+  width: 90vw;
+  min-height: calc(100vh - 60px);
+  margin: 60px auto;
+  display: flex;
+}

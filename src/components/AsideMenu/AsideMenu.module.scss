@@ -1,0 +1,19 @@
+.aside-menu {
+  padding: 20px;
+  width: 200px;
+  background-color: cadetblue;
+  &__title {
+    margin-top: 20px;
+  }
+  &__link {
+    margin-top: 20px;
+    padding: 3px 5px;
+    color: black;
+    text-align: center;
+    background-color: burlywood;
+    cursor: pointer;
+    &:hover {
+      background-color: red;
+    }
+  }
+}
