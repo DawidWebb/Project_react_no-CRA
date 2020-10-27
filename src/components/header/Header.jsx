@@ -27,7 +27,9 @@ const Header = () => {
     <header className={style()}>
       <div className={style("logo-wrapper")}></div>
       <h1 className={style("title")}>Aplikacja testowa</h1>
-      <button onClick={handleOnClick}>{setProperlyLabel}</button>
+      <button className={style("btn")} onClick={handleOnClick}>
+        {setProperlyLabel}
+      </button>
       <LoginForm
         handleOnClose={handleOnClose}
         isModalOpen={isModalOpen}
