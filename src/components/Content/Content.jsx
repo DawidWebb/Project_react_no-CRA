@@ -6,6 +6,7 @@ import { default as ContentStyles } from "./Content.module.scss";
 import { StoreContext } from "../../store/StoreProvider";
 
 import Courses from "../Courses/Courses";
+import User from "../User/User";
 
 const style = bemCssModules(ContentStyles);
 
@@ -22,7 +23,7 @@ const Content = () => {
       <Switch>
         <Route exact path="/" render={() => <Courses />} />
         {isUserLogged && (
-          <Route exact path="/my-staffy" render={() => <p>STAFF</p>} />
+          <Route exact path="/my-staffy" render={() => <User />} />
         )}
         {isAdmin && <Route exact path="/manage" render={() => <p>ADMIN</p>} />}
         <Redirect to="/" />
