@@ -16,7 +16,7 @@ const UserMenu = ({ isUserLogged }) => (
         </li>
         {isUserLogged && (
           <li className={style("link")}>
-            <Link to="/my-staff">My staff</Link>
+            <Link to="/my-staffy-">My staff</Link>
           </li>
         )}
       </ul>
