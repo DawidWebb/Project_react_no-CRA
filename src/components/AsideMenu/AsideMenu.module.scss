@@ -1,7 +1,12 @@
 .aside-menu {
+  position: relative;
   padding: 20px;
   width: 200px;
   background-color: cadetblue;
+  &__nav-wrapper {
+    position: sticky;
+    top: 80px;
+  }
   &__title {
     margin-top: 20px;
   }
